@@ -1,0 +1,48 @@
+Iniciar novo projeto.
+
+Instalar dependencias.
+
+npm i --save bootstrap@4.0.0.-beta jquery popper.js
+
+Editar o angular.json e adicionar as linhas abaixo:
+
+  "styles": [
+              "src/styles.css",
+			  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+				"node_modules/popper.js/dist/umd/popper.min.js",
+				"node_modules/jquery/dist/jquery.min.js",
+				"node_modules/bootstrap/dist/js/bootstrap.min.js"
+			]
+
+Criar 4 componentes.
+
+Acesso
+
+ng g c acesso
+
+Dentro do componente acesso criar os componentes, Banner, Login e cadastro, ex:
+
+ng g c acesso/banner
+ng g c acesso/login
+ng g c acesso/cadastro
+
+Editar os arquivos:
+
+app.component.css
+
+e
+
+acesso.component.html
+
+Dentro do app.component.html, retire todo o conteudo e coloque o seletor app-acesso.
+
+Fazer a edição dos aquivos app.banner.html e css.
+
+Logo após, realizar a inlcusão do componente banner dentro do componente acesso.
+
+<app-banner>
+
+
+Colocar os icons, gerar no site favicon-generator.org
